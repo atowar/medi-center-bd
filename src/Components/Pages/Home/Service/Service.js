@@ -6,7 +6,7 @@ const Service = ({ service }) => {
     return (
         <div className="service">
            
-            <div><img className="w-auto" src={imgFeatured} alt="" /></div>
+            <div><img className="w-full" src={imgFeatured} alt="" /></div>
             <div className="flex items-center ">
                 <div className="py-5">
                     <h2 className="text-2xl font-medium p-2">{title}</h2>
