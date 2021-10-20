@@ -21,11 +21,11 @@ const Signin = () => {
             <div className="login w-full md:w-3/5 lg:w-3/5 text-white p-5 rounded-md">
                 <div>
                     <h2 className="text-xl md:mb-5">Sign-In</h2>
-                    <form>
+                    <div>
                         <input className="p-2 rounded-md" type="email" name="" id="" placeholder="Type your best email here" /> <br />
                         <input className="my-5 text-black p-2" type="password" name="" id="" /><br />
                         <input className="text-lg rounded-md mb-2 text-black px-5 px-2"type="submit" value="submit" />
-                    </form>
+                    </div>
                     <p >New user? <Link to="/signup">Sign-Up</Link></p>
                 </div>
                 <div><button className="text-lg rounded-md mb-2 text-black px-5 px-2 bg-white" onClick={handleGoogleSignIn}

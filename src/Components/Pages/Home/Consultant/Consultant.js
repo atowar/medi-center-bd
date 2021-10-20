@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Consultant.css'
 
-const Consultant = ({ consultant }) => {
-    const { id, drName, drCat, imgDr } = consultant;
+const Consultant = ({ service }) => {
+    const { id, drName, drCat, imgDr } = service;
     return (
 
         <div className="service">
