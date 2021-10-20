@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../../../images/logo/logo.png'
 import './Header.css'
 
@@ -16,7 +16,7 @@ const Header = () => {
                 <NavLink to="/consultants">Consultants</NavLink>
                 <NavLink to="/consultants">Faq</NavLink>
                 <span>name: </span>
-                <button>Login</button>
+                <NavLink to="/signin"><button>Sign-In</button></NavLink>
             </div>
 
         </div>

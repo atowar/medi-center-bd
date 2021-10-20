@@ -1,5 +1,15 @@
 [
-   
+    {
+        "id": "1",
+        "title": "Ultrasound",
+        "courseDuration": "60",
+        "price": "24",
+        "drName": "Shilpa D. Singh",
+        "drCat": "Pathologist",
+        "description": "An ECG is one of the most common heart tests which monitors your heart rate, rhythm and electrical activity.",
+        "imgFeatured": "https://i.ibb.co/2WrYChp/ultrasound.jpg",
+        "imgDr": "https://i.ibb.co/Df6Kncn/medi-team06-615x410.jpg"
+    },
     {
         "id": "2",
         "title": "CT Lung Assessment",
@@ -42,7 +52,7 @@
         "drCat": "Pathologist",
         "description": "An ECG is one of the most common heart tests which monitors your heart rate, rhythm and electrical activity.",
         "imgFeatured": "https://i.ibb.co/2vFb5bg/digital-mammography.png",
-        "imgDr": "https://learnup.smartdemowp.com/wp-content/uploads/2021/06/course-img-3-500x300.jpg"
+        "imgDr": "https://i.ibb.co/xHQWWVn/medi-team01-615x410.jpg"
     },
     {
         "id": "6",
@@ -53,7 +63,7 @@
         "drCat": "Pathologist",
         "description": "An ECG is one of the most common heart tests which monitors your heart rate, rhythm and electrical activity.",
         "imgFeatured": "https://i.ibb.co/tsDfCX7/eye-screening.jpg",
-        "imgDr": "https://learnup.smartdemowp.com/wp-content/uploads/2021/06/course-img-3-500x300.jpg"
+        "imgDr": "https://i.ibb.co/Hhy89DW/medi-team05-615x410.jpg"
     },
     {
         "id": "7",
@@ -64,18 +74,8 @@
         "drCat": "Pathologist",
         "description": "An ECG is one of the most common heart tests which monitors your heart rate, rhythm and electrical activity.",
         "imgFeatured": "https://i.ibb.co/4pWLz7B/mri-scan.jpg",
-        "imgDr": "https://learnup.smartdemowp.com/wp-content/uploads/2021/06/course-img-3-500x300.jpg"
-    },
-    {
-        "id": "8",
-        "title": "Ultrasound",
-        "courseDuration": "60",
-        "price": "24",
-        "drName": "Shilpa D. Singh",
-        "drCat": "Pathologist",
-        "description": "An ECG is one of the most common heart tests which monitors your heart rate, rhythm and electrical activity.",
-        "imgFeatured": "https://i.ibb.co/2WrYChp/ultrasound.jpg",
-        "imgDr": "https://learnup.smartdemowp.com/wp-content/uploads/2021/06/course-img-3-500x300.jpg"
+        "imgDr": "https://i.ibb.co/Df6Kncn/medi-team06-615x410.jpg"
     }
+    
    
 ]

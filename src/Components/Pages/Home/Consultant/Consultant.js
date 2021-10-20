@@ -1,20 +1,25 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Consultant.css'
 
 const Consultant = ({ consultant }) => {
-    const { drName, drCat, imgDr } = consultant;
+    const { id, drName, drCat, imgDr } = consultant;
     return (
+
         <div className="service">
-           
-            <div><img className="w-auto" src={imgDr} alt="" /></div>
-            <div className="flex items-center ">
+
+            <div><img className="w-full" src={imgDr} alt="" /></div>
+            <div className="flex justify-center ">
                 <div className="py-5">
                     <h2 className="text-2xl font-medium p-2">{drName}</h2>
                     <p className="text-base font-medium p-2">{drCat}</p>
-                    <button className="p-3 text-xl text-white rounded-md">Learn More</button>
+                    <Link to={`/service/${id}`}>
+                        <button className="p-3 text-xl text-white rounded-md">Learn More</button>
+                    </Link>
                 </div>
             </div>
         </div>
+     
     );
 };
 
