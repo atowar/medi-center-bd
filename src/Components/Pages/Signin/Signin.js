@@ -1,10 +1,21 @@
 import './Signin.css'
 import React from 'react';
-import { Link } from 'react-router-dom';
-import useFirebase from '../../../Hooks/useFirebase';
+import { Link, useLocation, useHistory } from 'react-router-dom';
+import useAuth from '../../../Hooks/useAuth';
 
 const Signin = () => {
-    const {user, googleSignIn} = useFirebase();
+    const {user, googleSignIn} = useAuth();
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_uri = location.state?.from || '/'; 
+
+    const handleGoogleSignIn = () =>{
+        googleSignIn()
+        .then( result=>{
+            history.push (redirect_uri)
+        })
+    }
+
     return (
         <>
             <div>
@@ -16,7 +27,7 @@ const Signin = () => {
                 </form>
                 <p>New user? <Link to="/signup">Sign-Up</Link></p>
             </div>
-            <div><button onClick ={googleSignIn}
+            <div><button onClick ={handleGoogleSignIn}
             >Google Sign-In
             </button></div>
         </>

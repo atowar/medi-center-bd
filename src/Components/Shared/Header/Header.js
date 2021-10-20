@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import useFirebase from '../../../Hooks/useFirebase';
+import useAuth from '../../../Hooks/useAuth';
 import logo from '../../../images/logo/logo.png'
 import './Header.css'
 
 const Header = () => {
-    const {user, logOut} = useFirebase();
+    const {user, logOut} = useAuth();
     return (
         <div className=" nav flex border-t-2 border-green-400 mx-10 items-center">
             <div className="logo flex-none">
@@ -17,7 +17,7 @@ const Header = () => {
                 <NavLink to="/services">Services</NavLink>
                 <NavLink to="/consultants">Consultants</NavLink>
                 <NavLink to="/consultants">Faq</NavLink>
-                <span>name: </span>
+                <span>{user.displayName}</span>
                 {
                 user.email? <button onClick={logOut}>Sign-Out</button>
                 :
