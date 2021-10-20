@@ -43,6 +43,14 @@ const Header = ({ fixed }) => {
                                     <NavLink to="/home">Home</NavLink>
                                 </a>
                             </li>
+                            <li className="nav-item">
+                                <a
+                                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug hover:opacity-75"
+                                    href="#pablo"
+                                >
+                                     <Link to="/apointment">Make an Appointment</Link>
+                                </a>
+                            </li>
                          
                           
                             <li className="nav-item">
