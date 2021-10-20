@@ -1,6 +1,7 @@
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
+
 import Apointment from './Components/Pages/Apointment/Apointment';
 import ConsultantProfile from './Components/Pages/ConsultantProfile/ConsultantProfile';
 import Home from './Components/Pages/Home/Home';
@@ -9,6 +10,8 @@ import ServiceDetails from './Components/Pages/ServiceDetails/ServiceDetails';
 import Signin from './Components/Pages/Signin/Signin';
 import SignUp from './Components/Pages/SignUp/SignUp';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import Footer from './Components/Shared/Footer/Footer';
+import FooterBottom from './Components/Shared/FooterBottom/FooterBottom';
 import Header from './Components/Shared/Header/Header';
 import AuthProvider from './Context/AuthProvider';
 
@@ -25,7 +28,7 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
-            <Route path="/service/:serviceId">
+            <Route path="/service/:serviceId" component={ServiceDetails}>
               <ServiceDetails></ServiceDetails>
             </Route>
             <Route path="/consultant/:consultantId">
@@ -40,11 +43,15 @@ function App() {
             <Route path="/signup">
               <SignUp></SignUp>
             </Route>
+          
             <Route path="*">
               <NotFound></NotFound>
             </Route>
           </Switch>
+          <Footer></Footer>
+          <FooterBottom></FooterBottom>
         </Router>
+        
       </AuthProvider>
     </div>
   );
